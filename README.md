@@ -1,1 +1,1 @@
-# udacity-project-blog
+# Personal Blog Website Project
