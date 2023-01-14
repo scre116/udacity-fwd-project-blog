@@ -63,12 +63,91 @@ h1 {
     justify-content: space-between;
 }
 
+nav {
+    margin: 5px;
+}
+
+.nav-archive ul {
+    padding-left: 10px;
+}
+
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: lightblue;
     margin-top: 30px;
 }
 
+/* For bigger screens: grid layout for main elements and card content */
+@media (min-width: 700px) {
+    body {
+        display: grid;
+        grid-template-areas:    "header header" 
+                                "main nav" 
+                                "footer footer";
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 5px;
+    }
 
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .card {
+        display: grid;
+        grid-template-areas:    "title image"
+                                "author image"
+                                "text image"
+                                "text link";
+
+    }
+
+    .card-title {
+        grid-area: title;
+    }
+
+    .card-author {
+        grid-area: author;
+    }
+
+    .card-illustration {
+        grid-area: image;
+        width: 100%;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+
+    .card-text {
+        grid-area: text;
+    }
+
+    .card-link {
+        grid-area: link;
+    }
+}
+
+/* for big screens: cards are displayed in two columns */
+@media (min-width: 1500px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        margin: 5px 5px;
+    }
+
+}
