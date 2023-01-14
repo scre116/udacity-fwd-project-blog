@@ -1,2 +1,74 @@
 /* Styles for index.html */
 @import "blog.css";
+
+/* Default: Small screens */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: red url("../images/Red_betta_fish.jpg") center/cover;
+    font-size: 40px;
+    width: 100%;
+}
+
+h1 {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.card {
+    border: black solid 2px;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    order: 1;
+}
+
+.card-author {
+    order: 2;
+    text-align: right;
+}
+
+.card-illustration {
+    order: 3;
+    text-align: center;
+}
+
+.card-illustration-img {
+    width: 70%;
+}
+
+.card-text {
+    order: 4;
+}
+
+.card-link {
+    order: 5;
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.nav-arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: lightblue;
+    margin-top: 30px;
+}
+
+
