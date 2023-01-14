@@ -1,2 +1,89 @@
 /* Styles for blog post pages */
 @import "blog.css";
+
+/* Default: small screens */
+body {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+}
+
+.post-main-illustration-img {
+    width: 90%;
+}
+
+nav {
+    text-align: center;
+    font-size: larger;
+}
+
+.share {
+    border: 2px solid blue;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin-block: 10px;
+}
+
+.share-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.share-links a {
+    font-size: larger;
+}
+
+.share-title {
+    margin-top: 0;
+}
+
+.author-info {
+    grid-area: author;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.author-image {
+    width: 30%;
+    margin: 10px;
+    float: right;
+}
+
+/* big screens: author info on the side */
+@media (min-width: 1000px) {
+    body {
+        display: grid;
+        grid-template-areas:    "header header"
+                                "main author"
+                                "share author"
+                                "nav author"
+                                "footer footer";
+        grid-gap: 5px;
+        grid-column-gap: 15px;
+        align-items: flex-start;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    .share {
+        grid-area: share;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+}
