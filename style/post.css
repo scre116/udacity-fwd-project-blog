@@ -1,7 +1,7 @@
 /* Styles for blog post pages */
 @import "blog.css";
 
-/* Default: small screens */
+/* Default: For small screens */
 body {
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@ nav {
     float: right;
 }
 
-/* big screens: author info on the side */
+/* For big screens: author info on the side */
 @media (min-width: 1000px) {
     body {
         display: grid;
@@ -85,5 +85,4 @@ nav {
     footer {
         grid-area: footer;
     }
-
 }

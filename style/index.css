@@ -1,7 +1,7 @@
 /* Styles for index.html */
 @import "blog.css";
 
-/* Default: Small screens */
+/* Default: For small screens */
 body {
     display: flex;
     flex-direction: column;
@@ -124,7 +124,7 @@ nav {
     }
 }
 
-/* for big screens: cards are displayed in two columns */
+/* For big screens: cards are displayed in two columns */
 @media (min-width: 1500px) {
     .cards {
         display: grid;
@@ -134,5 +134,4 @@ nav {
     .card {
         margin: 5px 5px;
     }
-
 }
