@@ -1,2 +1,17 @@
 /* common blog elements */
 @import "main.css";
+
+header {
+    background: red url("../images/Red_betta_fish.jpg") center/cover;
+    font-size: 40px;
+    width: 100%;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightblue;
+    margin-top: 30px;
+}
