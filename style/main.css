@@ -54,8 +54,8 @@ a {
     color: darkgreen;
 }
 
-a.inactive {
-    color: darkgrey;
+.inactive {
+    text-decoration: none;
 }
 
 .underlined {
