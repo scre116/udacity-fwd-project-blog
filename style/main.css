@@ -1,45 +1,10 @@
 /* Design of basic HTML elements */
-
-body {
-    background-color: beige;
-    font-family: "Roboto Light", serif;
-    font-size: medium;
-    color: darkslateblue;
-}
-
-
-/* Block elements */
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-}
+@import "main-h.css";
+@import "main-list.css";
+@import "main-body.css";
 
 p {
     text-align: justify;
-}
-
-ul {
-    list-style: square;
-}
-
-ul ul {
-    font-size: 0.9em;
-}
-
-ol {
-    list-style: upper-roman;
-}
-
-ol ol {
-    font-size: 0.9em;
 }
 
 blockquote {
@@ -47,8 +12,6 @@ blockquote {
     border: 1px solid black;
     padding: 5px;
 }
-
-/* Inline elements */
 
 a {
     color: darkgreen;

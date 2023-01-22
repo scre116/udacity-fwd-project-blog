@@ -1,0 +1,15 @@
+ul {
+    list-style: square;
+}
+
+ul ul {
+    font-size: 0.9em;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+ol ol {
+    font-size: 0.9em;
+}
