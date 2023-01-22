@@ -21,7 +21,6 @@ a {
     text-decoration: none;
 }
 
-.underlined {
-    text-decoration: underline;
+u {
+    font-size: 1.1em;
 }
-
